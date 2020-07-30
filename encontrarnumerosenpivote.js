@@ -1,6 +1,8 @@
 /* 
 PROGRAMA DONDE ENCUENTRA k ELEMENTOS DE NUMEROS DESDE UN PUNTO PIVOTE X
-
+k => numeros elementos; en este caso 3
+x => punto de pivote; en este caso 5
+closest_nums(nums, k, x)
 
 */
 
@@ -66,6 +68,9 @@ function closest_nums(array, cantidadNumeros, numPivot)
 
 }
 
+// k => numeros elementos; en este caso 3
+// x => punto de pivote; en este caso 5
+//closest_nums(nums, k, x)
 let arrayNums = closest_nums([1, 3, 7, 8, 9], 3, 5);
-// [7, 3, 8]
+//resultado=[7, 3, 8]
 console.log(arrayNums);
