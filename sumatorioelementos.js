@@ -3,7 +3,7 @@ PROGRAMA DONDE ENCUENTRA LAS POSIBLES PAREJAS UNICAS DE UNA LISTA DE NUMEROS POS
 
 */
 
-var arrayResultados = [];
+let arrayResultados = [];
 sumatorio_combo([10, 1, 2, 7, 6, 1, 5], 8);
 console.log(arrayResultados);
 // [ [ 1, 2, 5 ], [ 1, 7 ], [ 1, 1, 6 ], [ 2, 6 ] ]
