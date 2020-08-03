@@ -12,9 +12,9 @@ console.log(resultado);
 function show_distancia(palabra, caracter)
 {
     let resultados = [];
-    let distanciaActual = parseInt(-Number.MIN_VALUE);
+    let distanciaActual = -palabra.length;
 
-    for (let i = 0; i < palabra.length; i++ )
+    for (let i = 0; i < palabra.length; i++)
     {
         if (palabra[i].toString() == caracter.toString())
         {
@@ -22,12 +22,13 @@ function show_distancia(palabra, caracter)
         }
 
         resultados.push(i - distanciaActual);
+
     }
 
     // console.log(resultados);
-    // [5, 6, 0, 0, 1, 2, 3, 4, 0, 1]
+    // [10, 11, 0, 0, 1, 2, 3, 4, 0, 1]
 
-    distanciaActual = Number.MAX_VALUE;
+    distanciaActual = palabra.length;
     for (let i = palabra.length - 1; i >= 0; i--)
     {
         if (palabra[i].toString() == caracter.toString())
