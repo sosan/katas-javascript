@@ -16,7 +16,6 @@ function show_mayoritarios(arrayNumeros)
 
     
     arrayNumeros.sort();
-    console.log(arrayNumeros);
     //[1, 1, 1, 1, 2, 3, 3, 3, 5, 5, 5]
     for (let i = 0; i < arrayNumeros.length; i++)
     {
